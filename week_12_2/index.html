@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="html-text"> homework12_2    </p>
+    
+    <script>
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    function getRandomIndex() {
+      return Math.floor(Math.random() * alphabet.length);
+    }
+    
+    let randomWord = '';
+
+    for (i = 0; i < 4; i++) {
+      const randomIndex = getRandomIndex();
+      randomWord = randomWord + alphabet[randomIndex];
+    }
+    console.log(randomWord)
+    </script>
+      </body>
+  </html>
